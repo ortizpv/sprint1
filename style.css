@@ -1,0 +1,133 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    
+    }
+    
+    .primero {
+        background-color: #7ed5fd;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+        .primeroA{
+            background-color: #9388c5;
+            display: flex;
+            flex-flow:  row nowrap;
+            height: 60px;
+        }
+            .subPA1{
+                background-color: #a0b0e3;
+                flex: 1 1 auto;
+                height: 6px;
+                   
+            }
+            .subPA2{
+                background-color: #a0b0e3;
+                flex: 5 1 auto;
+            }
+            .subPA3{
+                background-color: #a0b0e3;
+                flex: 1 1 auto;
+            }
+        .primeroB{
+            background-color: #9388c5;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+            .subPB1{
+                background-color: #a0b0e3;
+            }
+    
+    .segundo {
+        background-color: #7ed5fd;
+        display: flex;
+    }
+        .segundoA{
+            background-color: #9388c5;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: wrap;
+        }
+            .subSA1{
+                background-color: #a0b0e3;
+                flex: 1 1 40%;
+            }
+            .subSA2{
+                background-color: #a0b0e3;
+                flex: 1 1 40%;
+            }
+            .subSA3{
+                background-color: #a0b0e3;
+                flex: 1 1 40%;
+            }
+            .subSA4{
+                background-color: #a0b0e3;
+                flex: 1 1 40%;
+            }
+            .subSA5{
+                background-color: #b2fff9;
+                flex: 1 1 100%;
+            }
+            
+        .segundoB{
+            background-color: #9388c5;
+            flex: 1 1 auto;
+        }
+            .subSB1{
+                background-color: #a0b0e3;
+            }
+            .subSB2{
+                background-color: #a0b0e3;
+            }
+    
+    
+    .tercero {
+        background-color: #7ed5fd;
+        display: flex;
+        justify-content: center;
+    }
+        .terceroA{
+            background-color: #a0b0e3;
+            width: 100%;
+        }
+    
+    @media all and (max-width: 1200px) {
+        .primero{
+            flex-direction: column;
+            height: auto;
+        }
+            
+    }
+    @media all and (max-width: 768px){
+        .primero{
+            flex-direction: column;
+            height: auto;
+        }
+        .primeroA{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: auto;
+        }
+        .segundo{
+            flex-direction: column;
+        }    
+        .segundoA{
+            flex-direction: column;
+        }
+        .segundoB{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+    @media all and (max-width: 400px){
+        .segundoA{
+            flex-direction: column;
+        }
+        .segundoB{
+            flex-direction: column;
+        }
+    
+    }
